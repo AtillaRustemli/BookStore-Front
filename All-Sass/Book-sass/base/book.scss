@@ -1,8 +1,11 @@
 @import "../utilities/mixins";
 @import "./reset";
 @import "./variables";
+@import "/All-Sass/slick-sass/slick.scss";
+@import "/All-Sass/slick-sass/slick-theme.scss";
+@import "./base";
 @import "../layout/footer";
 @import "../layout/header";
-@import "./base";
 @import "../layout/header-navPart";
+@import "../components/new-releases";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap");

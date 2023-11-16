@@ -11,21 +11,27 @@
   align-items: center;
   column-gap: 10px;
   font-family: $main-font-family;
+  li {
+    a {
+      padding: 6px 14px;
+      font-size: 14px;
+    }
+  }
 }
 .nav-right {
-    background-color: white;
-    border-radius: 10px 10px 0px 0px ;
-    display: flex;
-    overflow: hidden;
-    .busket-icon{
+  background-color: white;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  font-family: $main-font-family;
+  overflow: hidden;
+  .busket-icon {
     padding: 20px;
-
-    }
-    .checkout{
-        display: flex;
-        align-items: center;
-        padding: 15px;
-        background-color: #0099DD;
-        color: white;
-    }
+  }
+  .checkout {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #0099dd;
+    color: white;
+  }
 }

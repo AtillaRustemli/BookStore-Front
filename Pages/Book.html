@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/assets/css/book.css" />
     <script
       src="https://kit.fontawesome.com/44901548a6.js"
@@ -103,31 +117,72 @@
     </header>
     <div class="nav">
       <div class="container">
-      <ul class="nav-list">
-        <li>Book</li>
-        <li>EBook</li>
-        <li>AudioBook</li>
-        <li>Games&Puzzles</li>
-        <li>Magazines</li>
-        <li>Stationary</li>
-        <li>Gift Ideas</li>
-      </ul>
-       <div class="nav-right">
-        <div class="busket-icon">
-          <span>0 items</span>
-          <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+        <ul class="nav-list">
+          <li><a href="#">Book</a></li>
+          <li><a href="#">EBook</a></li>
+          <li><a href="#">AudioBook</a></li>
+          <li><a href="#">Games&Puzzles</a></li>
+          <li><a href="#">Magazines</a></li>
+          <li><a href="#">Stationary</a></li>
+          <li><a href="#">Gift Ideas</a></li>
+        </ul>
+        <div class="nav-right">
+          <div class="busket-icon">
+            <span>0 items</span>
+            <i class="fa-solid fa-cart-shopping" style="color: #000000"></i>
+          </div>
+          <div class="checkout"><a href="#">Checkout</a></div>
         </div>
-        <div class="checkout"><a href="#">Checkout</a></div>
-       </div>
       </div>
     </div>
     <!-- ---------------------Header------------------- -->
 
     <!-- ---------------------Main---------------------- -->
-    <main></main>
+    <main>
+      <section class="new-releases">
+        <div class="container">
+          <div class="new-releases-book">
+            <div>
+              <img src="../images/book-example.avif" alt="" />
+              <div class="checkout-in-book">
+                <span>$27.50</span>
+                <span
+                  ><i
+                    class="fa-solid fa-cart-shopping"
+                    style="color: #000000"
+                  ></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- ---------------------Main---------------------- -->
-
     <!-- ---------------------Footer---------------------- -->
     <footer></footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="../assets/js/slick.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/book.js"></script>
   </body>
 </html>
