@@ -1,8 +1,8 @@
 @import "../utilities/mixins";
 @import "./reset";
 @import "./variables";
-@import "/All-Sass/slick-sass/slick.scss";
-@import "/All-Sass/slick-sass/slick-theme.scss";
+@import "../../slick-sass/slick-theme";
+@import "../../slick-sass/slick";
 @import "./base";
 @import "../layout/footer";
 @import "../layout/header";
