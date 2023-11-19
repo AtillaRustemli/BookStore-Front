@@ -4,6 +4,9 @@
   .container {
     display: flex;
     justify-content: space-between;
+    @include myMedia(960px) {
+      justify-content: space-around;
+    }
   }
 }
 .nav-list {
@@ -17,6 +20,11 @@
       font-size: 14px;
     }
   }
+  @include myMedia(960px) {
+    padding: 10px;
+    font-size: 12px;
+    column-gap: 5px;
+  }
 }
 .nav-right {
   background-color: white;
@@ -24,8 +32,15 @@
   display: flex;
   font-family: $main-font-family;
   overflow: hidden;
+
   .busket-icon {
+    display: flex;
+    align-items: center;
     padding: 20px;
+    @include myMedia(960px) {
+      padding: 10px;
+      font-size: 15px;
+    }
   }
   .checkout {
     display: flex;
@@ -33,5 +48,9 @@
     padding: 15px;
     background-color: #0099dd;
     color: white;
+    @include myMedia(960px) {
+      padding: 10px;
+      font-size: 15px;
+    }
   }
 }

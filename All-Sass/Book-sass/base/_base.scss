@@ -1,7 +1,23 @@
-.container{
-    width: 75%;
-    margin: 0px auto;
-  @include myMedia(1600px) {
-    width: 1200px;
+.container {
+  width: 75%;
+  margin: 0px auto;
+  @include myMedia(1230px) {
+    width: 100%;
   }
+}
+body {
+  font-family: $main-font-family;
+}
+section,
+.nav {
+  margin-bottom: 30px;
+}
+
+.body-bg-black::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.438);
 }

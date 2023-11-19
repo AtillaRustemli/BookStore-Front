@@ -36,3 +36,14 @@
 .priv-arrow{
     margin-right: 15px;
 }
+.new-releases-btn{
+    display: flex;
+    justify-content: center;
+    button{
+    border: 1px solid $main-green;
+    padding: 10px;
+    background-color: inherit;
+    color:$main-green;
+
+    }
+}

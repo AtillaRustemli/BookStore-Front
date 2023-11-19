@@ -135,13 +135,20 @@ header {
       input {
         padding: 0px 16px;
         width: 365px;
+        @include myMedia(960px){
+          width: 70%;
+         }
       }
       button {
         background-color: #ff6633;
         color: white;
+        display: flex;
         i {
           margin-right: 10px;
         }
+        @include myMedia(960px){
+         font-size: 10px;
+         }
       }
       span {
         position: relative;

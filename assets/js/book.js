@@ -14,8 +14,8 @@ $(document).ready(function () {
       {
         breakpoint: 1600,
         settings: {
-          slidesToShow: 6,
-          slidesToScroll: 5,
+          slidesToShow: 8,
+          slidesToScroll: 7,
           infinite: true,
           dots: true,
         },
@@ -23,8 +23,8 @@ $(document).ready(function () {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 5,
+          slidesToScroll: 4,
           infinite: true,
           dots: true,
         },
@@ -45,4 +45,24 @@ $(document).ready(function () {
       },
     ],
   });
+});
+
+//------------------new-releases-----------------------
+//---------------------drawer--------------------------
+
+let body = document.querySelector("body");
+let drawer = document.querySelector(".drawer");
+let drawerOpenBtn = document.querySelector(".drawer-open-btn");
+let drawerCloseBtn = document.querySelector(".drawer-cancel-btn");
+drawerOpenBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  drawer.classList.add("drawer-open");
+  body.classList.add("body-bg-black");
+});
+drawerCloseBtn.addEventListener("click", (e) => {
+  e.preventDefault;
+  e.stopPropagation;
+  drawer.classList.remove("drawer-open");
+  body.classList.remove("body-bg-black");
 });
