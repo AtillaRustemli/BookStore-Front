@@ -1,0 +1,46 @@
+.trending-now {
+  .container {
+    display: flex;
+  }
+}
+.trending-now-left {
+  width: 50%;
+  .trending-now-slider {
+    display: flex;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    flex: wrap;
+    flex-direction: column;
+    justify-content: center;
+    & > div {
+      width: calc(100% / 4);
+      height: calc(100% / 4);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    div:first-child {
+      width: 300px;
+      width: auto;
+      height: 100%;
+    }
+    div:nth-child(5n - 4) {
+      cursor: pointer;
+    }
+    .priv-arrow-trending-now {
+      font-size: 20px;
+      position: absolute;
+      left: 0px;
+      z-index: 2;
+    }
+    .next-arrow-trending-now {
+      font-size: 20px;
+      position: absolute;
+      right: 0px;
+      z-index: 2;
+    }
+  }
+}

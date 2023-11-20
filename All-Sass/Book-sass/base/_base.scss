@@ -6,7 +6,9 @@
   }
 }
 body {
+  width: 100vw;
   font-family: $main-font-family;
+  overflow-x: hidden;
 }
 section,
 .nav {

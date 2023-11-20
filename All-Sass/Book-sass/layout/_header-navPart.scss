@@ -4,8 +4,15 @@
   .container {
     display: flex;
     justify-content: space-between;
+    padding: 24px 15px 20px;
+    @include myMedia(1600px) {
+      width: 1200px;
+    }
+    @include myMedia(1200px) {
+      width: 100%;
+    }
     @include myMedia(960px) {
-      justify-content: space-around;
+      padding: 24px 15px 20px;
     }
   }
 }
@@ -20,10 +27,17 @@
       font-size: 14px;
     }
   }
+
+  @include myMedia(1250px) {
+    font-size: 14px;
+  }
   @include myMedia(960px) {
     padding: 10px;
     font-size: 12px;
     column-gap: 5px;
+  }
+  @include myMedia(1200px) {
+    display: none;
   }
 }
 .nav-right {

@@ -8,10 +8,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @include myMedia(480px) {
+    justify-content: center;
+  }
 }
 .new-releases-books-item {
   position: relative;
   width: 100px !important;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
 }
 .checkout-in-book {
   position: absolute;
@@ -33,17 +41,16 @@
   height: 20px;
   font-size: 30px;
 }
-.priv-arrow{
-    margin-right: 15px;
+.priv-arrow {
+  margin-right: 15px;
 }
-.new-releases-btn{
-    display: flex;
-    justify-content: center;
-    button{
+.new-releases-btn {
+  display: flex;
+  justify-content: center;
+  button {
     border: 1px solid $main-green;
     padding: 10px;
     background-color: inherit;
-    color:$main-green;
-
-    }
+    color: $main-green;
+  }
 }
