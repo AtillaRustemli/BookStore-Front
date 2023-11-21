@@ -4,43 +4,97 @@
   }
 }
 .trending-now-left {
-  width: 50%;
-  .trending-now-slider {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  &>div{
+  & > h2 {
     padding: 10px;
     position: relative;
-    width: 100%;
-    height: 250px;
-    flex: wrap;
-    flex-direction: column;
-    justify-content: center;
-    & > div {
-      width: calc(100% / 4);
-      height: calc(100% / 4);
-      img {
-        width: 100%;
-        height: 100%;
-      }
+    font-weight: 600;
+    span {
+      color: $main-green-light;
     }
-    div:first-child {
-      width: 300px;
-      width: auto;
-      height: 100%;
-    }
-    div:nth-child(5n - 4) {
-      cursor: pointer;
-    }
-    .priv-arrow-trending-now {
-      font-size: 20px;
+    &::before {
+      content: "";
       position: absolute;
-      left: 0px;
-      z-index: 2;
-    }
-    .next-arrow-trending-now {
-      font-size: 20px;
-      position: absolute;
-      right: 0px;
-      z-index: 2;
+      width: 100%;
+      border: 1px solid rgba(168, 168, 168, 0.635);
+      bottom: 0px;
     }
   }
+
+  }
+}
+.trending-now-books {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 15px;
+  & > div {
+    width: calc(100% / 3 - 20px);
+    height: auto;
+    position: relative;
+    padding: 0px 10px;
+    background-color: $bg-gray;
+    img {
+      width: 100%;
+    }
+  }
+}
+.checkout-in-trending-now {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 50%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    padding: 7%;
+    background-color: white;
+  }
+  .checkout-icon {
+    background-color: $mainblue-light;
+  }
+}
+.trending-now-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 10px;
+  background-color: white !important;
+  & > div {
+    width: 50%;
+    height: 40%;
+    position: relative;
+    padding: 0px 10px;
+    background-color: $bg-gray;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .checkout-in-trending-now {
+    span {
+      padding: 5px;
+      font-size: 10px;
+    }
+  }
+}
+.trending-now-left-bottom-link {
+  padding: 10px;
+  width: 100%;
+  color: $main-green-light;
+  display: flex;
+  justify-content: flex-end;
+  background-color: $bg-gray;
+  font-size: 14px;
+  font-weight: 600;
+}
+.trending-now-right{
+    display: flex;
+    flex-direction: column;
 }
