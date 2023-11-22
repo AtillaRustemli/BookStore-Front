@@ -4,22 +4,13 @@ $(document).ready(function () {
     dots: true,
     infinite: false,
     speed: 300,
-    slidesToShow: 10,
-    slidesToScroll: 10,
+    slidesToShow: 7,
+    slidesToScroll: 6,
     prevArrow:
       ' <span class="priv-arrow"><i class="fa-solid fa-angle-left" style="color: #000000;"></i></span>',
     nextArrow:
       '<span class="next-arrow"><i class="fa-solid fa-angle-right" style="color: #000000;"></i></span>',
     responsive: [
-      {
-        breakpoint: 1600,
-        settings: {
-          slidesToShow: 8,
-          slidesToScroll: 7,
-          infinite: true,
-          dots: true,
-        },
-      },
       {
         breakpoint: 1024,
         settings: {
