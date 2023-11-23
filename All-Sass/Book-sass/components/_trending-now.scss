@@ -33,7 +33,6 @@
   }
 }
 .trending-now-books {
-  cursor: pointer;
   margin: 10px 0px;
   display: flex;
   justify-content: space-around;
@@ -47,11 +46,11 @@
     img {
       width: 100%;
     }
-    &:hover > .checkout-in-trending-now,
-    .trending-now-center > div:hover > .checkout-in-trending-now {
-      display: flex;
-    }
   }
+}
+.trending-now-book-link {
+  display: inline-block;
+  width: 100%;
 }
 .checkout-in-trending-now {
   position: absolute;
@@ -59,18 +58,34 @@
   right: 0px;
   width: 50%;
   height: 10%;
-  display: none;
+  display: flex;
+  opacity: 1;
   align-items: center;
   justify-content: center;
+  transition: opacity 0.2s linear;
+
   span {
     padding: 7%;
     background-color: white;
   }
+
   .checkout-icon {
     background-color: $mainblue-light;
+    padding: 7%;
+    height: 100%;
   }
 }
+.trending-now-book:hover > .checkout-in-trending-now,
+.trending-now-center > div:hover .checkout-in-trending-now {
+  opacity: 1;
+}
+.trending-now-books > div:hover,
+.trending-now-center > div:hover {
+  box-shadow: 1px 1px 20px black;
+}
 .trending-now-center {
+  box-shadow: none !important;
+  transition: 0.2s linear;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -86,9 +101,6 @@
     img {
       width: 100%;
       height: 100%;
-    }
-    &:hover > .checkout-in-trending-now {
-      display: flex;
     }
   }
   .checkout-in-trending-now {
@@ -115,6 +127,7 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  margin-top: 20px;
   @include myMedia(950px) {
     justify-content: center;
     width: 70%;
@@ -233,5 +246,22 @@
       font-size: 13px;
       column-gap: 5px;
     }
+  }
+}
+
+.view-all-best-sellers {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background-color: $bg-gray;
+  padding: 10px;
+  text-align: center;
+  color: $main-green-light;
+  border: 1px solid #bbbbbb;
+  border-top: none;
+  font-size: 20px;
+  font-weight: 600;
+  &:hover {
+    color: #bbbbbb;
   }
 }
