@@ -43,13 +43,15 @@ $(document).ready(function () {
 
 let body = document.querySelector("body");
 let drawer = document.querySelector(".drawer");
-let drawerOpenBtn = document.querySelector(".drawer-open-btn");
+let drawerOpenBtn = document.getElementsByClassName("drawer-open-btn");
 let drawerCloseBtn = document.querySelector(".drawer-cancel-btn");
-drawerOpenBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-  drawer.classList.add("drawer-open");
-  body.classList.add("body-bg-black");
+Array.from(drawerOpenBtn).forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    drawer.classList.add("drawer-open");
+    body.classList.add("body-bg-black");
+  });
 });
 drawerCloseBtn.addEventListener("click", (e) => {
   e.preventDefault;
@@ -64,3 +66,15 @@ document.addEventListener("click", (e) => {
   drawer.classList.remove("drawer-open");
   body.classList.remove("body-bg-black");
 });
+//---------------------drawer--------------------------
+//------------------trending-now-----------------------
+let trending_now_first_child = document.querySelector(
+  "#trending-now-first-child"
+);
+let trending_now_books = document.getElementsByClassName("trending-now-books");
+Array.from(trending_now_books).forEach((book) => {
+  book.style.height = `${trending_now_first_child.clientHeight}px`;
+});
+console.log(trending_now_books);
+console.log(trending_now_first_child);
+console.log(trending_now_first_child.clientHeight);

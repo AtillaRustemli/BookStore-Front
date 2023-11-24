@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @include myMedia(480px) {
+  @include myMedia(680px) {
     justify-content: center;
   }
 }
