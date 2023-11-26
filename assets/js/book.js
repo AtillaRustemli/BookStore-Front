@@ -98,3 +98,12 @@ let count = 0;
 Array.from(heights).forEach((h) => {
   count += h.clientHeight;
 });
+
+//---------------------Header-in-sroll--------------------------
+//------------------------Promotions----------------------------
+
+let promotion_item = document.getElementsByClassName("promotions-inner-item");
+
+Array.from(promotion_item).forEach((e) => {
+  e.style.height;
+});
