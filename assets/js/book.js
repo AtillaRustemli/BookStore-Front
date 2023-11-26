@@ -75,6 +75,29 @@ let trending_now_books = document.getElementsByClassName("trending-now-books");
 Array.from(trending_now_books).forEach((book) => {
   book.style.height = `${trending_now_first_child.clientHeight}px`;
 });
-console.log(trending_now_books);
-console.log(trending_now_first_child);
-console.log(trending_now_first_child.clientHeight);
+window.addEventListener("resize", function () {
+  location.reload();
+});
+//-----------------------trending-now---------------------------
+//---------------------Header-in-sroll--------------------------
+window.addEventListener("scroll", function () {
+  let currentHeight = document.documentElement.scrollTop;
+  let headerHeight =
+    document.querySelector(".nav").clientHeight +
+    document.querySelector("header").clientHeight;
+
+  let header_in_scroll = document.querySelector(".header-in-scroll");
+  if (currentHeight >= headerHeight) {
+    header_in_scroll.classList.add("header-visible");
+    console.log("Salam");
+  } else {
+    header_in_scroll.classList.remove("header-visible");
+    console.log("Sagol");
+  }
+});
+
+console.log(document.documentElement.scrollTop);
+console.log(
+  document.querySelector(".nav").clientHeight +
+    document.querySelector("header").clientHeight
+);
