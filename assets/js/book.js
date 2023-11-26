@@ -89,15 +89,12 @@ window.addEventListener("scroll", function () {
   let header_in_scroll = document.querySelector(".header-in-scroll");
   if (currentHeight >= headerHeight) {
     header_in_scroll.classList.add("header-visible");
-    console.log("Salam");
   } else {
     header_in_scroll.classList.remove("header-visible");
-    console.log("Sagol");
   }
 });
-
-console.log(document.documentElement.scrollTop);
-console.log(
-  document.querySelector(".nav").clientHeight +
-    document.querySelector("header").clientHeight
-);
+let heights = document.getElementsByTagName("section");
+let count = 0;
+Array.from(heights).forEach((h) => {
+  count += h.clientHeight;
+});

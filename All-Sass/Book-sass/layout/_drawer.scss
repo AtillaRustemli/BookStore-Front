@@ -1,5 +1,4 @@
 .drawer-open {
-  
   transform: translateX(0px) !important;
 }
 .drawer {
@@ -9,7 +8,7 @@
   border: 1px solid;
   padding: 30px;
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   top: 0px;
   left: 0px;
   transition: 0.3s linear;
