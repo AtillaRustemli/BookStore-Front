@@ -1,6 +1,7 @@
-@import "../utilities/mixins";
-@import "./reset";
 @import "./variables";
+@import "../utilities/mixins";
+@import "../utilities/shablons";
+@import "./reset";
 @import "../../slick-sass/slick-theme";
 @import "../../slick-sass/slick";
 @import "./base";
