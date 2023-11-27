@@ -107,3 +107,9 @@ let promotion_item = document.getElementsByClassName("promotions-inner-item");
 Array.from(promotion_item).forEach((e) => {
   e.style.height;
 });
+let pageHeight = Math.max(
+  document.body.scrollHeight,
+  document.documentElement.scrollHeight
+);
+
+console.log("Page height:", pageHeight);
