@@ -70,8 +70,13 @@ main {
   padding: 10px 0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 12px;
   row-gap: 15px;
+}
+.forget-password-remember-me > div {
+  display: flex;
+  align-items: center;
 }
 .email-confirm {
   margin-top: 20px;
@@ -81,15 +86,24 @@ main {
   .forget-password-remember-me {
     font-size: 10px;
   }
+  .login {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 890px) {
   .login {
     width: 50%;
   }
+  .create-one-in-login {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 567px) {
   .login {
     width: 70%;
+  }
+  .create-one-in-login {
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 370px) {

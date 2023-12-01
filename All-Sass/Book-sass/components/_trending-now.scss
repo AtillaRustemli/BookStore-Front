@@ -102,29 +102,33 @@
   ol {
     list-style-type: style;
     width: 100%;
-  }
-  li {
-    counter-increment: item;
-    display: flex;
-    align-items: start;
-    justify-content: flex-start;
-    column-gap: 10px;
-    width: 100%;
-    border: 1px solid #bbbbbb;
-    border-top: none;
-    padding: 10px;
-    img {
-      width: 15% !important;
-    }
-    &::before {
-      content: counter(item);
-      color: #bbbbbb;
-      font-weight: 500;
-    }
-    & > div {
+    li {
+      counter-increment: item;
       display: flex;
-      flex-direction: column;
-      font-size: 13px;
+      align-items: start;
+      justify-content: flex-start;
+      column-gap: 10px;
+      width: 100%;
+      border: 1px solid #bbbbbb;
+      border-top: none;
+      padding: 10px;
+      a {
+        width: 15% !important;
+
+        img {
+          width: 100% !important;
+        }
+      }
+      &::before {
+        content: counter(item);
+        color: #bbbbbb;
+        font-weight: 500;
+      }
+      & > div {
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+      }
     }
   }
 }
@@ -257,7 +261,7 @@
   }
   .trending-now-center-book {
     width: calc(100% / 8);
-    @include myMedia(935px) {
+    @include myMedia(1030px) {
       height: 50%;
     }
     a {
