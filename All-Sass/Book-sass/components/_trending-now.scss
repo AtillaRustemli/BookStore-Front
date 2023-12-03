@@ -36,6 +36,10 @@
 .trending-now-book-link {
   display: inline-block;
   width: 100%;
+  transition: 0.3s linear;
+  &:hover {
+    box-shadow: 0px 10px 15px;
+  }
 }
 .checkout-in-trending-now {
   position: absolute;
@@ -48,31 +52,35 @@
   align-items: center;
   justify-content: center;
   transition: opacity 0.2s linear;
+  height: 20%;
   a {
-    height: 90%;
+    height: 100%;
     width: 25%;
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
-
+    align-items: center;
     background-color: $mainblue-light;
-    .checkout-icon {
-      position: absolute;
-      background-color: inherit;
-    }
   }
   span {
     padding: 7%;
     background-color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .checkout-icon {
+    width: 100%;
+    padding: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $mainblue-light;
   }
 }
 .trending-now-books > li:hover > .checkout-in-trending-now {
   opacity: 1;
-}
-.trending-now-books > div:hover,
-.trending-now-center > div:hover {
-  box-shadow: 1px 1px 20px black;
 }
 .trending-now-left-bottom-link {
   padding: 10px;
@@ -287,6 +295,9 @@
         width: 100%;
       }
     }
+    .checkout-in-trending-now {
+      height: 10%;
+    }
 
     @include myMedia(730px) {
       width: calc(100% / 3 - 20px);
@@ -299,6 +310,9 @@
       & > img {
         width: 100%;
       }
+    }
+    .checkout-in-trending-now {
+      height: 10%;
     }
 
     @include myMedia(730px) {
