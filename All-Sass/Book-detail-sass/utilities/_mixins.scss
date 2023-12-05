@@ -5,6 +5,7 @@
 }
 @mixin Btn-hover-animation-flexable($color) {
   //width ve height daxildeki elementden asili olmamalidir!
+  overflow: hidden;
   &::before {
     content: "";
     position: absolute;
