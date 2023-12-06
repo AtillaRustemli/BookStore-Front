@@ -217,7 +217,61 @@
     <main>
       <div class="wish-list-drawer">
         <p class="cancel-btn"><i class="fa-solid fa-x"></i></p>
-        <div class="form-in-wish-lis-drawer"></div>
+        <div class="form-in-wish-list-drawer">
+          <h2 class="title">Add item to wish list</h2>
+          <p>Select a list to add</p>
+          <form class="wish-list-drawer-form">
+            <div class="wish-list">
+              <select name="wishList" id="">
+                <option value="Atilla">Atilla</option>
+                <option value="Atilla1">Atilla1</option>
+                <option value="Atilla2">Atilla2</option>
+              </select>
+            </div>
+            <div class="add-to-list-btn">
+              <button type="submit"><p>Add to List</p></button>
+            </div>
+          </form>
+          <p class="create-wish-list-in-drawer">
+            Or :
+            <span class="wish-list-create-drawer-open-btn">
+              <span
+                ><i class="fa-solid fa-plus"></i> Create and add to a new wish
+                list</span
+              >
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="wish-list-create-drawer">
+        <p class="create-drawer-cancel-btn"><i class="fa-solid fa-x"></i></p>
+        <div class="form-in-wish-list-create-drawer">
+          <h2 class="title">Create a new wish list</h2>
+          <p>Create a wish list to save items you like, gift ideas and more.</p>
+          <form class="form-in-create-list-drawer">
+            <div class="input-in-create-list-drawer">
+              <p id="input-in-create-list-drawer-title">Wish list name</p>
+              <input type="text" placeholder="Wish list name" />
+            </div>
+            <div class="input-in-create-list-drawer">
+              <p>Wish list type</p>
+              <div class="list-type-in-drawer">
+                <div>
+                  <input type="radio" name="type" value="Private" />
+                  <label for="Private">Private</label>
+                </div>
+                <div>
+                  <input type="radio" name="type" value="Public" />
+                  <label for="Public">Public</label>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <button type="submit"><p>Add List</p></button>
+              <button class="cancel-button"><p>Cancel</p></button>
+            </div>
+          </form>
+        </div>
       </div>
       <section class="book-product">
         <div class="container">
@@ -301,7 +355,7 @@
                     </a>
                   </div>
                   <div class="add-to-wish-list">
-                    <a href="#">
+                    <a href="#" class="add-to-wish-list-btn">
                       <p>Add to wish List<i class="fa-regular fa-heart"></i></p>
                     </a>
                   </div>

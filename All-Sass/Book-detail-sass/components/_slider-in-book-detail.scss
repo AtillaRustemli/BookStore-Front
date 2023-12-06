@@ -125,6 +125,13 @@
           font-size: 14px;
           position: absolute;
           z-index: 2;
+
+          @include myMedia(725px) {
+            font-size: 10px;
+          }
+          @include myMedia(600px) {
+            font-size: 8px;
+          }
         }
         @include Btn-hover-animation-flexable($mainblue-dark);
       }

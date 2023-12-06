@@ -1,7 +1,7 @@
 try {
   $(document).ready(function () {
     console.log("salam");
-    
+
     $(".scroller-book").slick({
       dots: true,
       infinite: false,
@@ -44,3 +44,71 @@ try {
 }
 
 //------------------slider-in-book-detail-----------------------
+//---------------------drawer--------------------------
+
+let wishLisDrawer = document.querySelector(".wish-list-drawer");
+let wishLisCreateDrawer = document.querySelector(".wish-list-create-drawer");
+let wishListDrawerOpenBtn = document.getElementsByClassName(
+  "add-to-wish-list-btn"
+);
+let wishListCreateDrawerOpenBtn = document.getElementsByClassName(
+  "wish-list-create-drawer-open-btn"
+);
+let wishListDrawerCloseBtn = document.querySelector(".cancel-btn");
+let createDrawerCancelBtn = document.querySelector(".create-drawer-cancel-btn");
+let createDrawerCancelBtnInForm = document.querySelector(".cancel-button");
+Array.from(wishListDrawerOpenBtn).forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    wishLisDrawer.classList.add("wish-list-drawer-open");
+    body.classList.add("body-bg-white");
+    console.log("Salam");
+  });
+});
+wishListDrawerCloseBtn.addEventListener("click", (e) => {
+  e.preventDefault;
+  e.stopPropagation;
+  wishLisDrawer.classList.remove("wish-list-drawer-open");
+  body.classList.remove("body-bg-white");
+});
+wishLisDrawer.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+document.addEventListener("click", (e) => {
+  wishLisDrawer.classList.remove("wish-list-drawer-open");
+  body.classList.remove("body-bg-white");
+});
+Array.from(wishListCreateDrawerOpenBtn).forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    wishLisCreateDrawer.classList.add("wish-list-drawer-open");
+    body.classList.add("body-bg-white");
+    console.log("Salam");
+  });
+});
+createDrawerCancelBtn.addEventListener("click", (e) => {
+  e.preventDefault;
+  e.stopPropagation;
+  wishLisCreateDrawer.classList.remove("wish-list-drawer-open");
+
+  wishLisDrawer.classList.remove("wish-list-drawer-open");
+  body.classList.remove("body-bg-white");
+});
+createDrawerCancelBtnInForm.addEventListener("click", (e) => {
+  e.preventDefault;
+  e.stopPropagation;
+  wishLisCreateDrawer.classList.remove("wish-list-drawer-open");
+
+  wishLisDrawer.classList.remove("wish-list-drawer-open");
+  body.classList.remove("body-bg-white");
+});
+wishLisCreateDrawer.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+document.addEventListener("click", (e) => {
+  wishLisCreateDrawer.classList.remove("wish-list-drawer-open");
+  body.classList.remove("body-bg-white");
+});
+//---------------------drawer--------------------------
