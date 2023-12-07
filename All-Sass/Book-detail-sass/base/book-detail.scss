@@ -1,15 +1,10 @@
-@import "../utilities/mixins";
 @import "./variables";
+@import "../utilities/mixins";
 @import "../utilities/shablons";
 @import "./reset";
 @import "./base";
 @import "../../slick-sass/slick-theme";
 @import "../../slick-sass/slick";
-@import "../layout/header";
-@import "../layout/header-navPart";
-@import "../layout/header-in-scroll";
-@import "../layout/drawer";
-@import "../layout/footer";
 @import "../components/book-product";
 @import "../components/slider-in-book-detail";
 @import "../components/wish-list-drawer";
