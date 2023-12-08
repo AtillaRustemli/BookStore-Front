@@ -1,3 +1,5 @@
+import { checknoxInWhishList } from "./wish-list";
+
 try {
   $(document).ready(function () {
     console.log("salam");
@@ -111,4 +113,9 @@ document.addEventListener("click", (e) => {
   wishLisCreateDrawer.classList.remove("wish-list-drawer-open");
   body.classList.remove("body-bg-white");
 });
+function selectAll() {
+  Array.from(checknoxInWhishList).forEach((item) => {
+    item.checked = true;
+  });
+}
 //---------------------drawer--------------------------

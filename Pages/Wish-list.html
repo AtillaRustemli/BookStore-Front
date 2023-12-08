@@ -230,17 +230,66 @@
           <div class="wish-list-account-inner">
             <div class="wish-list-account-inner-left">
               <ul class="wish-list-list">
-                <li>
-                  <p>Atilla(l)</p>
-                  <i class="fa-solid fa-lock"></i>
+                <li class="wish-list-item" onclick="toggleContent(this)">
+                  <a href="#">
+                    <p>Atilla(l)</p>
+                    <i class="fa-solid fa-lock"></i>
+                  </a>
                 </li>
-                <li>
-                  <p>Atilla(4)</p>
-                  <i class="fa-solid fa-lock-open"></i>
+                <li class="wish-list-item" onclick="toggleContent(this)">
+                  <a href="#">
+                    <p>Atilla(4)</p>
+                    <i class="fa-solid fa-lock-open"></i>
+                  </a>
                 </li>
               </ul>
+              <div class="create-new-list">
+                <a href="#">
+                  <p><i class="fa-solid fa-plus"></i>Create new List</p>
+                </a>
+              </div>
             </div>
-            <div></div>
+            <div class="wish-list-account-inner-right">
+              <div class="title">
+                <h2>ListName <i class="fa-solid fa-lock-open"></i></h2>
+                <div class="edit-in-wish-list">
+                  <a href="#" class="edit"
+                    ><p><i class="fa-solid fa-pen"></i> Edit</p></a
+                  >
+                  <a href="#" class="share"
+                    ><p><i class="fa-solid fa-share-nodes"></i>Share List</p></a
+                  >
+                </div>
+              </div>
+              <div class="wish-list-nav">
+                <form>
+                  <input
+                    type="checkbox"
+                    name="selectAll"
+                    onclick="selectAll()"
+                  />
+                  <label for="selectAll">Select All</label>
+                </form>
+                <ul class="wish-list-nav-list">
+                  <li><a href="#">All Products</a></li>
+                  <li><a href="#">Books</a></li>
+                  <li><a href="#">EBooks</a></li>
+                  <li><a href="#">AudioBooks</a></li>
+                </ul>
+              </div>
+              <form>
+                <ul class="wish-list-book">
+                  <li>
+                    <div class="check-btn">
+                      <label>
+                        <input class="checkbox-in-wish-list" type="checkbox" />
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </form>
+              <!-- <button class="atish" onclick="submitForm()"></button> -->
+            </div>
           </div>
         </div>
       </section>
@@ -284,6 +333,6 @@
     <script src="../assets/js/slick.js"></script>
     <script src="../assets/js/slick.min.js"></script>
     <script src="../assets/js/book.js"></script>
-    <script src="../assets/js/book-detaila.js"></script>
+    <script src="../assets/js/wish-list.js"></script>
   </body>
 </html>
