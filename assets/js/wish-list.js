@@ -47,9 +47,27 @@ fetch-le formdata-ya append etdiyim datani backende gonderib responce aliram*/
 let checknoxInWhishList = document.getElementsByClassName(
   "checkbox-in-wish-list"
 );
+let selectAllBtn = document.querySelector(".select-all-btn-wish-list");
 
-function selectAll() {
+if (selectAllBtn.checked == true) {
+}
+function selectall(elem) {
   Array.from(checknoxInWhishList).forEach((item) => {
-    item.checked = true;
+    item.checked = elem.checked;
   });
+}
+function checkSelectAll() {
+  Array.from(checknoxInWhishList).forEach((item) => {
+    if (!item.checked) {
+      selectAllBtn.checked = false;
+    }
+  });
+}
+//----------------nav-list------------
+let nav_list = document.getElementsByClassName("wish-list-nav-list-item");
+function selectWishListNav(el) {
+  Array.from(nav_list).forEach((item) => {
+    item.classList.remove("wish-list-active");
+  });
+  el.classList.add("wish-list-active");
 }
