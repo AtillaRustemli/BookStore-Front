@@ -100,12 +100,58 @@ function selectWishListNav(el) {
 
 //--------------------------select-all---------------------------------
 //---------------------select-submit-drawer----------------------------
-function selectSubmitDrawer() {
-  //   Array.from(checkboxInWhishList).forEach((item) => {
-  //     if (item.checked || el.checked) {
-  //       selectSubmit.classList.add("select-submit-btn-open ");
-  //     } else {
-  //       selectSubmit.classList.remove("select-submit-btn-open ");
-  //     }
-  //   });
-}
+let editDrawerBtn = document.querySelector(".edit");
+let editDrawer = document.querySelector(".edit-drawer");
+let bodyBg = document.querySelector("body");
+let editDrawerCancelBtn = document.querySelector(".edit-drawer-cancel-btn");
+let saveEditDrawerBtn = document.querySelector(".save");
+saveEditDrawerBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  editDrawer.style.display = "none";
+  bodyBg.classList.remove("body-bg-black");
+  location.reload();
+});
+
+editDrawer.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+editDrawerBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  editDrawer.style.display = "flex";
+  bodyBg.classList.add("body-bg-black");
+});
+editDrawerCancelBtn.addEventListener("click", (e) => {
+  editDrawer.style.display = "none";
+  bodyBg.classList.remove("body-bg-black");
+});
+document.addEventListener("click", (e) => {
+  editDrawer.style.display = "none";
+  bodyBg.classList.remove("body-bg-black");
+});
+
+//---------------------select-submit-drawer----------------------------
+//---------------------delete-submit-drawer----------------------------
+
+let deleteDrawerBtn = document.querySelector(".delete");
+let deleteDrawerClose = document.querySelector(".delete-drawer-cancel-btn");
+let deleteDrawer = document.querySelector(".asking-delete");
+deleteDrawerBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  console.log("salalalalalllaakwj fvAERFVK wefr;llJ DcWAefn");
+  deleteDrawer.style.display = "flex ";
+  bodyBg.classList.add("body-bg-black");
+});
+deleteDrawer.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+deleteDrawerClose.addEventListener("click", (e) => {
+  e.preventDefault();
+  deleteDrawer.style.display = "none";
+  bodyBg.classList.remove("body-bg-black");
+});
+document.querySelector(".cancel-delete").addEventListener("click", (e) => {
+  e.preventDefault();
+  deleteDrawer.style.display = "none";
+  bodyBg.classList.remove("body-bg-black");
+});

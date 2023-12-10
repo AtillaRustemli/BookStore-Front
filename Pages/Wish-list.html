@@ -259,7 +259,7 @@
                   <a href="#" class="share"
                     ><p><i class="fa-solid fa-share-nodes"></i>Share List</p></a
                   >
-                  <a href="#" class="edit">
+                  <a href="#" class="delete">
                     <!-- Yalniz sonradan yaradilan list-lerde olur -->
                     <p><i class="fa-solid fa-trash"></i> Delete</p></a
                   >
@@ -526,6 +526,55 @@
           </div>
         </div>
       </section>
+      <div class="edit-drawer">
+        <p class="edit-drawer-cancel-btn"><i class="fa-solid fa-xmark"></i></p>
+        <div class="edit-drawer-form">
+          <h2 class="title">Edit your Wish List</h2>
+          <form class="wish-list-drawer-form">
+            <div class="edit-drawer-wish-list">
+              <p>Wish List Name</p>
+              <input type="text" />
+            </div>
+            <div class="wish-list-status">
+              <p>Wish List Status</p>
+              <div class="list-status">
+                <label>
+                  <input
+                    type="radio"
+                    name="status"
+                    value="Private"
+                  />Private(Only you can see)
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="status"
+                    value="Public"
+                  />Public(Everybody can see)
+                </label>
+              </div>
+            </div>
+            <div class="edit-drawer-save-btn">
+              <button type="submit" class="save"><p>Save</p></button>
+              <button class="cancel-edit-drawer">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="asking-delete">
+        <p class="delete-drawer-cancel-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </p>
+        <h2>Delete Wish list?</h2>
+        <p>
+          Wish List <span>(ListName)</span> and all the items you have added to
+          it will be deleted.
+        </p>
+        <div class="suggection-button">
+          <a href="#" class="yes"><p>Yes</p></a>
+          <a href="#" class="cancel-delete"><p>Cancel</p></a>
+        </div>
+      </div>
     </main>
     <!-- ---------------------Main---------------------- -->
     <!-- ---------------------Footer---------------------- -->

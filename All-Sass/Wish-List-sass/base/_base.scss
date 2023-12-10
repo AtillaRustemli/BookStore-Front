@@ -14,14 +14,15 @@ section,
 .nav {
   margin-bottom: 30px;
 }
-
-.body-bg-black::before {
-  content: "";
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: 4;
-  background-color: rgba(0, 0, 0, 0.438);
+.body-bg-black {
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.438);
+  }
 }
 
 .body-bg-white::before {
