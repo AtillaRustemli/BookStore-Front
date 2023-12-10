@@ -446,17 +446,111 @@
         }
       }
       .select-submit {
+        border-radius: 5px;
         position: fixed;
+        z-index: 3;
         bottom: 0px;
         margin: 0px auto;
         background-color: red;
-        width: 40%;
-        height: 50px;
+        width: 50%;
+        align-self: center;
         display: flex;
         align-items: center;
-        padding: 10px;
+        justify-content: space-between;
+        padding: 20px;
         background-color: white;
-        box-shadow: 2px 2px 200px;
+        transform: translateY(100%);
+        transition: 0.3s linear;
+        @include myMedia(1230px) {
+          width: 60%;
+        }
+        @include myMedia(700px) {
+          width: 75%;
+        }
+        @include myMedia(500px) {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 10px;
+        }
+        button {
+          cursor: pointer;
+          height: 40px;
+          width: 25%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+          font-weight: 600;
+          position: relative;
+          @include myMedia(930px) {
+            width: 35%;
+          }
+          @include myMedia(580px) {
+            font-size: 10px !important;
+          }
+          @include myMedia(500px) {
+            width: 80% !important;
+            font-size: 12px !important;
+          }
+          @include myMedia(300px) {
+            font-size: 10px !important;
+          }
+          i {
+            margin-left: 5px;
+          }
+          p {
+            position: absolute;
+            z-index: 2;
+          }
+        }
+        .select-submit-left {
+          width: 60%;
+          display: flex;
+          justify-content: space-between;
+          column-gap: 10px;
+          padding: 10px;
+          @include myMedia(800px) {
+            width: 70%;
+          }
+          @include myMedia(500px) {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px;
+            width: 100%;
+            padding: 0px;
+          }
+          button {
+            width: 50%;
+            @include myMedia(930px) {
+              width: 60%;
+              font-size: 12px;
+            }
+          }
+        }
+        .wihs-list-move-btn {
+          border-color: #384250;
+          border: 1px solid $main-green-light;
+          color: #384250;
+          @include Btn-hover-animation-flexable($main-green);
+          &:hover {
+            color: white;
+          }
+
+          @include myMedia(1030px) {
+            font-size: 12px;
+          }
+        }
+        .busket-btn {
+          background-color: $mainblue-light;
+          color: white;
+          width: 40% !important;
+
+          @include Btn-hover-animation-flexable($mainblue-dark);
+
+          @include myMedia(500px) {
+            width: 80% !important;
+          }
+        }
       }
     }
   }
@@ -481,5 +575,10 @@
     color: $main-green-light;
     text-decoration: underline;
     text-underline-offset: 4px;
+  }
+  .select-submit-btn-open {
+    transform: translateY(0px) !important;
+
+    box-shadow: 2px 2px 100px !important;
   }
 }

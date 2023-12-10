@@ -44,30 +44,68 @@ fetch-le formdata-ya append etdiyim datani backende gonderib responce aliram*/
 //---------------------submit-form----------------------------
 //---------------------select-all----------------------------
 
-let checknoxInWhishList = document.getElementsByClassName(
+let selectSubmit = document.querySelector(".select-submit");
+
+let checkboxInWhishList = document.getElementsByClassName(
   "checkbox-in-wish-list"
 );
+let allCheckbox = document.querySelectorAll('input[type="checkbox"]');
 let selectAllBtn = document.querySelector(".select-all-btn-wish-list");
 
-if (selectAllBtn.checked == true) {
-}
 function selectall(elem) {
-  Array.from(checknoxInWhishList).forEach((item) => {
+  Array.from(checkboxInWhishList).forEach((item) => {
     item.checked = elem.checked;
   });
+  if (elem.checked) {
+    selectSubmit.classList.add("select-submit-btn-open");
+  } else {
+    selectSubmit.classList.remove("select-submit-btn-open");
+  }
 }
 function checkSelectAll() {
-  Array.from(checknoxInWhishList).forEach((item) => {
+  let allCheckboxChecked = Array.from(checkboxInWhishList).every(function (
+    item
+  ) {
+    return item.checked;
+  });
+  if (allCheckboxChecked) {
+    selectAllBtn.checked = true;
+  }
+  Array.from(checkboxInWhishList).forEach((item) => {
     if (!item.checked) {
       selectAllBtn.checked = false;
     }
   });
+  let isChecked = Array.from(allCheckbox).some((item) => {
+    return item.checked;
+  });
+  console.log(isChecked);
+
+  if (isChecked) {
+    selectSubmit.classList.add("select-submit-btn-open");
+  } else {
+    selectSubmit.classList.remove("select-submit-btn-open");
+  }
 }
+
 //----------------nav-list------------
 let nav_list = document.getElementsByClassName("wish-list-nav-list-item");
+
 function selectWishListNav(el) {
   Array.from(nav_list).forEach((item) => {
     item.classList.remove("wish-list-active");
   });
   el.classList.add("wish-list-active");
+}
+
+//--------------------------select-all---------------------------------
+//---------------------select-submit-drawer----------------------------
+function selectSubmitDrawer() {
+  //   Array.from(checkboxInWhishList).forEach((item) => {
+  //     if (item.checked || el.checked) {
+  //       selectSubmit.classList.add("select-submit-btn-open ");
+  //     } else {
+  //       selectSubmit.classList.remove("select-submit-btn-open ");
+  //     }
+  //   });
 }
