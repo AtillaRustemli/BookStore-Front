@@ -3,13 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../assets/css/layout.css" />
-    <link rel="stylesheet" href="../assets/css/login-signup.css" />
+    <link rel="stylesheet" href="../assets/css/author.css" />
     <script
       src="https://kit.fontawesome.com/44901548a6.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
   </head>
   <body>
     <!-- ---------------------Header------------------- -->
@@ -58,7 +72,7 @@
                   <i class="fa-regular fa-heart" style="color: #ffffff"></i>
                   <span> My Wish Lists</span>
                 </a>
-                <a href="./Login.html">
+                <a href="../Pages/Login.html">
                   <i class="fa-regular fa-user" style="color: #ffffff"></i>
                   <span>Login/ Join</span>
                 </a>
@@ -93,7 +107,8 @@
                   <i
                     class="fa-solid fa-magnifying-glass"
                     style="color: #ffffff"
-                  ></i>
+                  ></i
+                  >Search
                 </button>
               </div>
             </form>
@@ -201,40 +216,36 @@
 
     <!-- ---------------------Main---------------------- -->
     <main>
-      <div class="login">
-        <div class="title">
-          <h2>Sign Up</h2>
-          <p>Sign Up to get a lot of opportunities</p>
-        </div>
-        <div class="form-in-login">
-          <form>
-            <div>
-              <input type="text" placeholder="Username " />
-              <span><!-- "asp-validation-for" ucun! --></span>
-            </div>
-            <div>
-              <input type="text" placeholder="FulName" />
-              <span><!-- "asp-validation-for" ucun! --></span>
-            </div>
-            <div>
-              <input type="email" placeholder="Email" />
-              <span><!-- "asp-validation-for" ucun! --></span>
-            </div>
-            <div>
-              <input type="password" placeholder="Password" />
-              <span><!-- "asp-validation-for" ucun! --></span>
-            </div>
-            <div>
-              <input type="password" placeholder="Repeat Password" />
-              <button class="create-account" type="submit">Create</button>
-              <div class="email-confirm">
-                <a href="##">Confirm with your Email</a>
+      <section class="result-for-author">
+        <div class="container">
+          <div class="title">
+            <h4>Results For Author '(AuthorName)'</h4>
+          </div>
+          <div class="author-inner">
+            <div class="author-inner-left">
+              <div class="top">
+                <h4>Refine your Resultas</h4>
               </div>
-              <span><!-- "asp-validation-for" ucun! --></span>
+              <div class="category-refine">
+                <div class="refine-title">
+                  <p>Category</p>
+                </div>
+                <ul class="refine-child-list">
+                  <li class="refine-child-list" onclick="selectedRefine(this)">
+                    <a href="#">Atilla2(1)</a>
+                  </li>
+                  <li class="refine-child-list" onclick="selectedRefine(this)">
+                    <a href="#">Salam(2)</a>
+                  </li>
+                  <li class="refine-child-list" onclick="selectedRefine(this)">
+                    <a href="#">Sagol(4)</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
     <!-- ---------------------Main---------------------- -->
     <!-- ---------------------Footer---------------------- -->
@@ -260,6 +271,21 @@
       </div>
     </footer>
     <!-- ---------------------Footer---------------------- -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../assets/js/author.js"></script>
+    <script src="../assets/js/slick.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
     <script src="../assets/js/book.js"></script>
   </body>
 </html>

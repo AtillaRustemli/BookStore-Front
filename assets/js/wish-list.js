@@ -101,15 +101,21 @@ function selectWishListNav(el) {
 //--------------------------select-all---------------------------------
 //---------------------select-submit-drawer----------------------------
 let editDrawerBtn = document.querySelector(".edit");
+let editDrawerBtnClose = document.querySelector(".cancel-edit-drawer");
 let editDrawer = document.querySelector(".edit-drawer");
 let bodyBg = document.querySelector("body");
 let editDrawerCancelBtn = document.querySelector(".edit-drawer-cancel-btn");
 let saveEditDrawerBtn = document.querySelector(".save");
+
 saveEditDrawerBtn.addEventListener("click", (e) => {
-  e.preventDefault();
   editDrawer.style.display = "none";
   bodyBg.classList.remove("body-bg-black");
   location.reload();
+});
+editDrawerBtnClose.addEventListener("click", (e) => {
+  e.preventDefault();
+  editDrawer.style.display = "none";
+  bodyBg.classList.remove("body-bg-black");
 });
 
 editDrawer.addEventListener("click", (e) => {

@@ -1,0 +1,51 @@
+.result-for-author {
+  & .title {
+    font-size: 28px;
+    font-weight: 500;
+    color: #1f2a37;
+    padding: 15px;
+  }
+  .author-inner {
+    color: #53565a;
+    &-left {
+      width: 25%;
+      background-color: #f4f4f4;
+      padding: 5px;
+      .top {
+        padding: 15px 15px 18px 8px;
+        font-weight: 500;
+        font-size: 17px;
+      }
+      .category-refine {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        .refine-title {
+          color: #53555a;
+          padding: 15px 15px 18px 8px;
+          font-weight: 600;
+        }
+        .refine-child-list {
+          display: flex;
+          flex-direction: column;
+          padding: 0px 8px 10px;
+          font-size: 13px;
+          font-weight: 500;
+          row-gap: 2px;
+          li {
+            padding: 8px;
+            &:hover {
+              border: 2px solid #d0d0d0;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .active-refine {
+    border: 2px solid #d0d0d0;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+}
