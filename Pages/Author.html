@@ -223,25 +223,338 @@
           </div>
           <div class="author-inner">
             <div class="author-inner-left">
+              <div class="refine-cancel-btn">
+                <p><i class="fa-solid fa-xmark"></i></p>
+              </div>
               <div class="top">
                 <h4>Refine your Resultas</h4>
               </div>
-              <div class="category-refine">
-                <div class="refine-title">
-                  <p>Category</p>
+              <div class="refine">
+                <div class="category-refine">
+                  <div class="refine-title">
+                    <p>Category</p>
+                  </div>
+                  <ul class="refine-child-list">
+                    <li
+                      class="refine-child-list-item"
+                      onclick="selectedRefine(this)"
+                    >
+                      <a href="#">Atilla2(1)</a>
+                    </li>
+                    <li
+                      class="refine-child-list-item"
+                      onclick="selectedRefine(this)"
+                    >
+                      <a href="#">Salam(2)</a>
+                    </li>
+                    <li
+                      class="refine-child-list-item"
+                      onclick="selectedRefine(this)"
+                    >
+                      <a href="#">Sagol(4)</a>
+                    </li>
+                  </ul>
                 </div>
-                <ul class="refine-child-list">
-                  <li class="refine-child-list" onclick="selectedRefine(this)">
-                    <a href="#">Atilla2(1)</a>
-                  </li>
-                  <li class="refine-child-list" onclick="selectedRefine(this)">
-                    <a href="#">Salam(2)</a>
-                  </li>
-                  <li class="refine-child-list" onclick="selectedRefine(this)">
-                    <a href="#">Sagol(4)</a>
-                  </li>
-                </ul>
+                <div class="price-refine">
+                  <div class="refine-title">
+                    <p>Price</p>
+                  </div>
+                  <form>
+                    <ul class="refine-child-list">
+                      <li onclick="selectedRefine(this)">
+                        <label> <input type="radio" name="cost" />0-20$ </label>
+                      </li>
+                      <li onclick="selectedRefine(this)">
+                        <label>
+                          <input type="radio" name="cost" />20-40$
+                        </label>
+                      </li>
+                      <li onclick="selectedRefine(this)">
+                        <label> <input type="radio" name="cost" />40$+ </label>
+                      </li>
+                      <li onclick="selectedRefine(this)">
+                        <label>
+                          <input type="radio" name="cost" />All Cost
+                        </label>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
               </div>
+            </div>
+            <div class="author-inner-right">
+              <ul class="book-type">
+                <li onclick="selectedBookType(this)">
+                  <a href="#">
+                    <span class="type">Book</span><br />
+                    <span>(3)</span>
+                  </a>
+                </li>
+                <li onclick="selectedBookType(this)">
+                  <a href="#">
+                    <span class="type">eBook</span><br />
+                    <span>(1)</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="book-in-author">
+                <li>
+                  <div class="img-of-book-in-author">
+                    <a href="#">
+                      <img src="../images/book-example6.avif" alt="" />
+                    </a>
+                  </div>
+                  <div class="inner-description">
+                    <div class="book-name">
+                      <p>BookName</p>
+                    </div>
+                    <div class="author-name">
+                      <a href="#"><p>AuthorName</p></a>
+                    </div>
+                    <div class="book-type">
+                      <p>
+                        <i class="fa-solid fa-mobile-screen-button"></i>eBook
+                      </p>
+                      <!--   <p><i class="fa-solid fa-book"></i>Book</p> -->
+                    </div>
+                  </div>
+                  <div class="checkout">
+                    <p>24.50$</p>
+                    <div>
+                      <a href="#"
+                        ><p>Buy Now <i class="fa-solid fa-cart-shopping"></i></p
+                      ></a>
+                      <a href="#" class="wish-list"
+                        ><p><i class="fa-solid fa-heart"></i></p
+                      ></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="img-of-book-in-author">
+                    <a href="#">
+                      <img src="../images/book-example5.avif" alt="" />
+                    </a>
+                  </div>
+                  <div class="inner-description">
+                    <div class="book-name">
+                      <p>BookName</p>
+                    </div>
+                    <div class="author-name">
+                      <a href="#"><p>AuthorName</p></a>
+                    </div>
+                    <div class="book-type">
+                      <p>
+                        <i class="fa-solid fa-mobile-screen-button"></i>eBook
+                      </p>
+                      <!--   <p><i class="fa-solid fa-book"></i>Book</p> -->
+                    </div>
+                  </div>
+                  <div class="checkout">
+                    <p>24.50$</p>
+                    <div>
+                      <a href="#"
+                        ><p>Buy Now <i class="fa-solid fa-cart-shopping"></i></p
+                      ></a>
+                      <a href="#" class="wish-list"
+                        ><p><i class="fa-solid fa-heart"></i></p
+                      ></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="img-of-book-in-author">
+                    <a href="#">
+                      <img src="../images/book-example.avif" alt="" />
+                    </a>
+                  </div>
+                  <div class="inner-description">
+                    <div class="book-name">
+                      <p>BookName</p>
+                    </div>
+                    <div class="author-name">
+                      <a href="#"><p>AuthorName</p></a>
+                    </div>
+                    <div class="book-type">
+                      <p>
+                        <i class="fa-solid fa-mobile-screen-button"></i>eBook
+                      </p>
+                      <!--   <p><i class="fa-solid fa-book"></i>Book</p> -->
+                    </div>
+                  </div>
+                  <div class="checkout">
+                    <p>24.50$</p>
+                    <div>
+                      <a href="#"
+                        ><p>Buy Now <i class="fa-solid fa-cart-shopping"></i></p
+                      ></a>
+                      <a href="#" class="wish-list"
+                        ><p><i class="fa-solid fa-heart"></i></p
+                      ></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="img-of-book-in-author">
+                    <a href="#">
+                      <img src="../images/book-example6.avif" alt="" />
+                    </a>
+                  </div>
+                  <div class="inner-description">
+                    <div class="book-name">
+                      <p>BookName</p>
+                    </div>
+                    <div class="author-name">
+                      <a href="#"><p>AuthorName</p></a>
+                    </div>
+                    <div class="book-type">
+                      <p>
+                        <i class="fa-solid fa-mobile-screen-button"></i>eBook
+                      </p>
+                      <!--   <p><i class="fa-solid fa-book"></i>Book</p> -->
+                    </div>
+                  </div>
+                  <div class="checkout">
+                    <p>24.50$</p>
+                    <div>
+                      <a href="#"
+                        ><p>Buy Now <i class="fa-solid fa-cart-shopping"></i></p
+                      ></a>
+                      <a href="#" class="wish-list"
+                        ><p><i class="fa-solid fa-heart"></i></p
+                      ></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="img-of-book-in-author">
+                    <a href="#">
+                      <img src="../images/book-example4.avif" alt="" />
+                    </a>
+                  </div>
+                  <div class="inner-description">
+                    <div class="book-name">
+                      <p>BookName</p>
+                    </div>
+                    <div class="author-name">
+                      <a href="#"><p>AuthorName</p></a>
+                    </div>
+                    <div class="book-type">
+                      <p>
+                        <i class="fa-solid fa-mobile-screen-button"></i>eBook
+                      </p>
+                      <!--   <p><i class="fa-solid fa-book"></i>Book</p> -->
+                    </div>
+                  </div>
+                  <div class="checkout">
+                    <p>24.50$</p>
+                    <div>
+                      <a href="#"
+                        ><p>Buy Now <i class="fa-solid fa-cart-shopping"></i></p
+                      ></a>
+                      <a href="#" class="wish-list"
+                        ><p><i class="fa-solid fa-heart"></i></p
+                      ></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="img-of-book-in-author">
+                    <a href="#">
+                      <img src="../images/book-example2.avif" alt="" />
+                    </a>
+                  </div>
+                  <div class="inner-description">
+                    <div class="book-name">
+                      <p>BookName</p>
+                    </div>
+                    <div class="author-name">
+                      <a href="#"><p>AuthorName</p></a>
+                    </div>
+                    <div class="book-type">
+                      <p>
+                        <i class="fa-solid fa-mobile-screen-button"></i>eBook
+                      </p>
+                      <!--   <p><i class="fa-solid fa-book"></i>Book</p> -->
+                    </div>
+                  </div>
+                  <div class="checkout">
+                    <p>24.50$</p>
+                    <div>
+                      <a href="#"
+                        ><p>Buy Now <i class="fa-solid fa-cart-shopping"></i></p
+                      ></a>
+                      <a href="#" class="wish-list"
+                        ><p><i class="fa-solid fa-heart"></i></p
+                      ></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="img-of-book-in-author">
+                    <a href="#">
+                      <img src="../images/book-example3.avif" alt="" />
+                    </a>
+                  </div>
+                  <div class="inner-description">
+                    <div class="book-name">
+                      <p>BookName</p>
+                    </div>
+                    <div class="author-name">
+                      <a href="#"><p>AuthorName</p></a>
+                    </div>
+                    <div class="book-type">
+                      <p>
+                        <i class="fa-solid fa-mobile-screen-button"></i>eBook
+                      </p>
+                      <!--   <p><i class="fa-solid fa-book"></i>Book</p> -->
+                    </div>
+                  </div>
+                  <div class="checkout">
+                    <p>24.50$</p>
+                    <div>
+                      <a href="#"
+                        ><p>Buy Now <i class="fa-solid fa-cart-shopping"></i></p
+                      ></a>
+                      <a href="#" class="wish-list"
+                        ><p><i class="fa-solid fa-heart"></i></p
+                      ></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="img-of-book-in-author">
+                    <a href="#">
+                      <img src="../images/book-example4.avif" alt="" />
+                    </a>
+                  </div>
+                  <div class="inner-description">
+                    <div class="book-name">
+                      <p>BookName</p>
+                    </div>
+                    <div class="author-name">
+                      <a href="#"><p>AuthorName</p></a>
+                    </div>
+                    <div class="book-type">
+                      <p>
+                        <i class="fa-solid fa-mobile-screen-button"></i>eBook
+                      </p>
+                      <!--   <p><i class="fa-solid fa-book"></i>Book</p> -->
+                    </div>
+                  </div>
+                  <div class="checkout">
+                    <p>24.50$</p>
+                    <div>
+                      <a href="#"
+                        ><p>Buy Now <i class="fa-solid fa-cart-shopping"></i></p
+                      ></a>
+                      <a href="#" class="wish-list"
+                        ><p><i class="fa-solid fa-heart"></i></p
+                      ></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

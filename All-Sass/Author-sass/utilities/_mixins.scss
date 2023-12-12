@@ -19,6 +19,7 @@
     transition: 0.2s ease-in-out;
   }
   &:hover::before {
-    transform: translateX(-5%);
+    transform: translateX(0px);
+    
   }
 }
