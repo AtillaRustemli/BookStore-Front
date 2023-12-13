@@ -68,7 +68,7 @@
                 <span>Notifications</span>
               </a>
               <div>
-                <a href="#">
+                <a href="../Pages/Wish-list.html">
                   <i class="fa-regular fa-heart" style="color: #ffffff"></i>
                   <span> My Wish Lists</span>
                 </a>
@@ -223,11 +223,14 @@
           </div>
           <div class="author-inner">
             <div class="author-inner-left">
-              <div class="refine-cancel-btn">
-                <p><i class="fa-solid fa-xmark"></i></p>
-              </div>
               <div class="top">
-                <h4>Refine your Resultas</h4>
+                <h4>Refine your Results</h4>
+                <div class="refine-open-btn">
+                  <p><i class="fa-solid fa-angle-down"></i></p>
+                </div>
+                <div class="refine-cancel-btn">
+                  <p><i class="fa-solid fa-angle-up"></i></p>
+                </div>
               </div>
               <div class="refine">
                 <div class="category-refine">
@@ -259,7 +262,7 @@
                   <div class="refine-title">
                     <p>Price</p>
                   </div>
-                  <form>
+                  <form id="costForm">
                     <ul class="refine-child-list">
                       <li onclick="selectedRefine(this)">
                         <label> <input type="radio" name="cost" />0-20$ </label>
@@ -278,6 +281,26 @@
                         </label>
                       </li>
                     </ul>
+                    <button
+                      id="hidden-submit-button"
+                      type="submit"
+                      style="display: none"
+                    ></button>
+                  </form>
+                </div>
+                <div class="language-refine">
+                  <div class="refine-title">
+                    <p>Book Language:</p>
+                  </div>
+                  <form>
+                    <div>
+                      <select name="" id="">
+                        <option value="Azerbaijani">Azerbaijani</option>
+                        <option value="Turkish">Turkish</option>
+                        <option value="English">English</option>
+                        <option value="Russian">Russian</option>
+                      </select>
+                    </div>
                   </form>
                 </div>
               </div>
@@ -297,6 +320,13 @@
                   </a>
                 </li>
               </ul>
+              <div class="book-sort-by">
+                <div class="title-sort-by">Sort by:</div>
+                <div class="sort-by">
+                  <a href="#" id="first-one">Price High to Law</a>
+                  <a href="#">Price Law to High</a>
+                </div>
+              </div>
               <ul class="book-in-author">
                 <li>
                   <div class="img-of-book-in-author">
