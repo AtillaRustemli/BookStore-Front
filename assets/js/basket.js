@@ -1,11 +1,7 @@
 let targetSection = document.querySelector(".basket-cart");
 let totalCount = document.querySelector(".total-count-fixed");
-let sectionRect = targetSection.getBoundingClientRect();
-let totalCountRect = targetSection.getBoundingClientRect();
-
 function startFunction() {
-  console.log(totalCountRect.bottom);
-  console.log(sectionRect.bottom);
+  console.log("salam");
   totalCount.classList.add("foxed-p-for-total-count");
 }
 
@@ -16,11 +12,14 @@ function endFunction() {
 }
 
 window.addEventListener("scroll", () => {
-  if (sectionRect.top <= 0 && totalCountRect.bottom != sectionRect.bottom) {
+  let sectionRect = targetSection.getBoundingClientRect();
+  let totalCountRect = targetSection.getBoundingClientRect();
+  console.log(totalCountRect.bottom);
+  console.log(sectionRect.bottom);
+  console.log(sectionRect.top);
+  if (sectionRect.top <= 0 || totalCountRect.bottom == window.innerHeight) {
     startFunction();
   } else {
     endFunction();
   }
 });
-
-window.addEventListener("scroll", (e) => {});

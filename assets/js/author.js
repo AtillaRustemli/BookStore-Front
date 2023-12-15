@@ -1,6 +1,7 @@
 //-------------------------selected-refine----------------------
 let refine_item = document.querySelectorAll(".refine-child-list");
 let costFormSubmit = document.querySelector("#hidden-submit-button");
+
 function selectedRefine(el) {
   let parentEl = el.parentNode;
   let allChilds = parentEl.getElementsByTagName("li");

@@ -1,7 +1,7 @@
 .container {
   width: 1200px;
   margin: 0px auto;
-  @include myMedia(1230px) {
+  @include myMedia(1200px) {
     width: 90%;
   }
 }

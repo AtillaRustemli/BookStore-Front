@@ -132,6 +132,7 @@ editDrawerCancelBtn.addEventListener("click", (e) => {
 });
 document.addEventListener("click", (e) => {
   editDrawer.style.display = "none";
+  deleteDrawer.style.display = "none";
   bodyBg.classList.remove("body-bg-black");
 });
 
@@ -141,22 +142,22 @@ document.addEventListener("click", (e) => {
 let deleteDrawerBtn = document.querySelector(".delete");
 let deleteDrawerClose = document.querySelector(".delete-drawer-cancel-btn");
 let deleteDrawer = document.querySelector(".asking-delete");
+let deleteDrawerCancel = document.querySelector(".cancel-delete");
 deleteDrawerBtn.addEventListener("click", (e) => {
   e.preventDefault();
   e.stopPropagation();
-  console.log("salalalalalllaakwj fvAERFVK wefr;llJ DcWAefn");
   deleteDrawer.style.display = "flex ";
   bodyBg.classList.add("body-bg-black");
 });
 deleteDrawer.addEventListener("click", (e) => {
   e.stopPropagation();
 });
-deleteDrawerClose.addEventListener("click", (e) => {
+deleteDrawerCancel.addEventListener("click", (e) => {
   e.preventDefault();
   deleteDrawer.style.display = "none";
   bodyBg.classList.remove("body-bg-black");
 });
-document.querySelector(".cancel-delete").addEventListener("click", (e) => {
+deleteDrawerClose.addEventListener("click", (e) => {
   e.preventDefault();
   deleteDrawer.style.display = "none";
   bodyBg.classList.remove("body-bg-black");
