@@ -12,31 +12,31 @@
       margin-bottom: 30px;
     }
   }
-}
-.discover-me-icon-list {
-  display: flex;
-  justify-content: space-around;
-  li {
-    span {
-      border-radius: 50%;
-      background-color: #888888;
-      width: 45px;
-      height: 45px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
+  .discover-me-icon-list {
+    display: flex;
+    justify-content: space-around;
+    li {
+      span {
+        border-radius: 50%;
+        background-color: #888888;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
 
-      transition: 0.3s linear;
-      &:hover i {
-        scale: 1.1;
-      }
-      &:hover {
-        background-color: $main-green;
-      }
-      i {
-        position: absolute;
         transition: 0.3s linear;
+        &:hover i {
+          scale: 1.1;
+        }
+        &:hover {
+          background-color: $main-green;
+        }
+        i {
+          position: absolute;
+          transition: 0.3s linear;
+        }
       }
     }
   }
