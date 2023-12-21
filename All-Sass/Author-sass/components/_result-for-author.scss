@@ -148,6 +148,7 @@
       }
     }
     &-right {
+      background-color: white;
       width: 75%;
       @include myMedia(500px) {
         width: 90%;
