@@ -15,7 +15,11 @@
   .new-releases-books-item {
     position: relative;
     width: 100px !important;
-
+    a{
+      img{
+        width: 100%;
+      }
+     }
     display: flex;
     flex-direction: column;
     justify-content: center !important;
